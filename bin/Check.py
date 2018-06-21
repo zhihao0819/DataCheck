@@ -7,10 +7,10 @@
 
 import sys
 sys.path.append('../')
-from src.VdsApi import GetApiLogsPath
+from src.VdsApi import GetApiLogsData
 
 def main():
-    GetApiLogsPath()
+    GetApiLogsData()
 
 
 if __name__ == '__main__':
