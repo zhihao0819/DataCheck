@@ -17,16 +17,14 @@ def GetApiHosts():
 def GetApiLogsPath():
     apihosts = GetApiHosts()
     command = 'ls %s/*.log' % Config.data_dir
-    logs = [ RemoteCommand(host=host, port=Config.api_port, username=Config.api_user, passwd=Config.api_passwd, command=command) \
-             for host in apihosts ]
-    return [ log.strip('\n').split('\n') for log in logs ]
+    logspath = RemoteCommand(host=apihosts[0], port=Config.api_port, username=Config.api_user, passwd=Config.api_passwd, command=command)
+    return [ log.strip('\n').split('\n') for log in logspath ]
 
 def GetApiLogsData():
     logspath = GetApiLogsPath()
-    for logs in logspath:
-        for log in logs:
-            command = 'tail -2 %s' % log
-            print command
+    for log in logspath:
+        command = 'tail -2 %s' % log
+        print command
 
 
 
