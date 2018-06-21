@@ -17,10 +17,8 @@ def GetApiHosts():
 def GetApiLogsPath():
     apihosts = GetApiHosts()
     command = 'ls %s/*.log' % Config.data_dir
-    logs = []
-    for host in apihosts:
-        res = RemoteCommand(host=host, port=Config.api_port, username=Config.api_user, passwd=Config.api_passwd, command=command)
-        logs.append(res)
+    logs = [ RemoteCommand(host=host, port=Config.api_port, username=Config.api_user, passwd=Config.api_passwd, command=command) \
+             for host in apihosts ]
     return logs
 
 
