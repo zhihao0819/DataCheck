@@ -1,0 +1,422 @@
+DEB [20180621-17:20:50.006] thr=1   paramiko.transport: starting thread (client mode): 0xed9a410L
+DEB [20180621-17:20:50.006] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.1
+DEB [20180621-17:20:50.061] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_6.6.1
+INF [20180621-17:20:50.061] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_6.6.1)
+DEB [20180621-17:20:50.068] thr=1   paramiko.transport: kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20180621-17:20:50.068] thr=1   paramiko.transport: Kex agreed: ecdh-sha2-nistp256
+DEB [20180621-17:20:50.069] thr=1   paramiko.transport: HostKey agreed: ssh-ed25519
+DEB [20180621-17:20:50.069] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20180621-17:20:50.069] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20180621-17:20:50.069] thr=1   paramiko.transport: Compression agreed: none
+DEB [20180621-17:20:50.241] thr=1   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20180621-17:20:50.242] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20180621-17:20:50.243] thr=2   paramiko.transport: Adding ssh-ed25519 host key for front0: fe003d54628e41aec3c628507c7493f9
+DEB [20180621-17:20:50.253] thr=2   paramiko.transport: Trying discovered key b38aa8bcdebd930911c3f721ff3e542f in /Users/evanliu/.ssh/id_rsa
+DEB [20180621-17:20:50.571] thr=1   paramiko.transport: userauth is OK
+INF [20180621-17:20:50.627] thr=1   paramiko.transport: Auth banner: You are accessing a U.S. Government (USG) Information System (IS) that is 
+provided for USG-authorized use only. By using this IS (which includes any 
+device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for 
+purposes including, but not limited to, penetration testing, COMSEC monitoring, 
+network operations and defense, personnel misconduct (PM), law enforcement 
+(LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject 
+to routine monitoring, interception, and search, and may be disclosed or used 
+for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) 
+to protect USG interests -- not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE 
+or CI investigative searching or monitoring of the content of privileged 
+communications, or work product, related to personal representation or services 
+by attorneys, psychotherapists, or clergy, and their assistants. Such 
+communications and work product are private and confidential. See User 
+Agreement for details.
+
+
+INF [20180621-17:20:50.628] thr=1   paramiko.transport: Authentication (publickey) successful!
+DEB [20180621-17:20:50.637] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20180621-17:20:50.666] thr=1   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20180621-17:20:50.666] thr=1   paramiko.transport: Secsh channel 0 opened.
+DEB [20180621-17:20:50.684] thr=1   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20180621-17:20:50.730] thr=1   paramiko.transport: EOF in transport thread
+DEB [20180621-17:21:43.621] thr=1   paramiko.transport: starting thread (client mode): 0x507a410L
+DEB [20180621-17:21:43.622] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.1
+DEB [20180621-17:21:43.691] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_6.6.1
+INF [20180621-17:21:43.691] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_6.6.1)
+DEB [20180621-17:21:43.735] thr=1   paramiko.transport: kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20180621-17:21:43.736] thr=1   paramiko.transport: Kex agreed: ecdh-sha2-nistp256
+DEB [20180621-17:21:43.736] thr=1   paramiko.transport: HostKey agreed: ssh-ed25519
+DEB [20180621-17:21:43.736] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20180621-17:21:43.736] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20180621-17:21:43.736] thr=1   paramiko.transport: Compression agreed: none
+DEB [20180621-17:21:43.857] thr=1   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20180621-17:21:43.858] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20180621-17:21:43.864] thr=2   paramiko.transport: Adding ssh-ed25519 host key for front0: fe003d54628e41aec3c628507c7493f9
+DEB [20180621-17:21:43.868] thr=2   paramiko.transport: Trying discovered key b38aa8bcdebd930911c3f721ff3e542f in /Users/evanliu/.ssh/id_rsa
+DEB [20180621-17:21:43.974] thr=1   paramiko.transport: userauth is OK
+INF [20180621-17:21:44.058] thr=1   paramiko.transport: Auth banner: You are accessing a U.S. Government (USG) Information System (IS) that is 
+provided for USG-authorized use only. By using this IS (which includes any 
+device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for 
+purposes including, but not limited to, penetration testing, COMSEC monitoring, 
+network operations and defense, personnel misconduct (PM), law enforcement 
+(LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject 
+to routine monitoring, interception, and search, and may be disclosed or used 
+for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) 
+to protect USG interests -- not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE 
+or CI investigative searching or monitoring of the content of privileged 
+communications, or work product, related to personal representation or services 
+by attorneys, psychotherapists, or clergy, and their assistants. Such 
+communications and work product are private and confidential. See User 
+Agreement for details.
+
+
+INF [20180621-17:21:44.059] thr=1   paramiko.transport: Authentication (publickey) successful!
+DEB [20180621-17:21:44.073] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20180621-17:21:44.152] thr=1   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20180621-17:21:44.152] thr=1   paramiko.transport: Secsh channel 0 opened.
+DEB [20180621-17:21:44.253] thr=1   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20180621-17:21:44.289] thr=1   paramiko.transport: EOF in transport thread
+DEB [20180621-17:23:29.073] thr=1   paramiko.transport: starting thread (client mode): 0x4ec2410L
+DEB [20180621-17:23:29.074] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.1
+DEB [20180621-17:23:29.169] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_6.6.1
+INF [20180621-17:23:29.169] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_6.6.1)
+DEB [20180621-17:23:29.232] thr=1   paramiko.transport: kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20180621-17:23:29.232] thr=1   paramiko.transport: Kex agreed: ecdh-sha2-nistp256
+DEB [20180621-17:23:29.232] thr=1   paramiko.transport: HostKey agreed: ssh-ed25519
+DEB [20180621-17:23:29.233] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20180621-17:23:29.233] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20180621-17:23:29.233] thr=1   paramiko.transport: Compression agreed: none
+DEB [20180621-17:23:29.382] thr=1   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20180621-17:23:29.382] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20180621-17:23:29.402] thr=2   paramiko.transport: Adding ssh-ed25519 host key for front0: fe003d54628e41aec3c628507c7493f9
+DEB [20180621-17:23:29.405] thr=2   paramiko.transport: Trying discovered key b38aa8bcdebd930911c3f721ff3e542f in /Users/evanliu/.ssh/id_rsa
+DEB [20180621-17:23:29.549] thr=1   paramiko.transport: userauth is OK
+INF [20180621-17:23:29.976] thr=1   paramiko.transport: Auth banner: You are accessing a U.S. Government (USG) Information System (IS) that is 
+provided for USG-authorized use only. By using this IS (which includes any 
+device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for 
+purposes including, but not limited to, penetration testing, COMSEC monitoring, 
+network operations and defense, personnel misconduct (PM), law enforcement 
+(LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject 
+to routine monitoring, interception, and search, and may be disclosed or used 
+for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) 
+to protect USG interests -- not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE 
+or CI investigative searching or monitoring of the content of privileged 
+communications, or work product, related to personal representation or services 
+by attorneys, psychotherapists, or clergy, and their assistants. Such 
+communications and work product are private and confidential. See User 
+Agreement for details.
+
+
+INF [20180621-17:23:29.977] thr=1   paramiko.transport: Authentication (publickey) successful!
+DEB [20180621-17:23:29.991] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20180621-17:23:30.075] thr=1   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20180621-17:23:30.075] thr=1   paramiko.transport: Secsh channel 0 opened.
+DEB [20180621-17:23:30.183] thr=1   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20180621-17:23:30.228] thr=1   paramiko.transport: [chan 0] EOF received (0)
+DEB [20180621-17:23:30.228] thr=1   paramiko.transport: EOF in transport thread
+DEB [20180621-17:26:45.433] thr=1   paramiko.transport: starting thread (client mode): 0x52df410L
+DEB [20180621-17:26:45.434] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.1
+DEB [20180621-17:26:45.568] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_6.6.1
+INF [20180621-17:26:45.568] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_6.6.1)
+DEB [20180621-17:26:45.890] thr=1   paramiko.transport: kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20180621-17:26:45.890] thr=1   paramiko.transport: Kex agreed: ecdh-sha2-nistp256
+DEB [20180621-17:26:45.891] thr=1   paramiko.transport: HostKey agreed: ssh-ed25519
+DEB [20180621-17:26:45.891] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20180621-17:26:45.891] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20180621-17:26:45.891] thr=1   paramiko.transport: Compression agreed: none
+DEB [20180621-17:26:46.049] thr=1   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20180621-17:26:46.050] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20180621-17:26:46.059] thr=2   paramiko.transport: Adding ssh-ed25519 host key for front0: fe003d54628e41aec3c628507c7493f9
+DEB [20180621-17:26:46.063] thr=2   paramiko.transport: Trying discovered key b38aa8bcdebd930911c3f721ff3e542f in /Users/evanliu/.ssh/id_rsa
+DEB [20180621-17:26:46.201] thr=1   paramiko.transport: userauth is OK
+INF [20180621-17:26:46.323] thr=1   paramiko.transport: Auth banner: You are accessing a U.S. Government (USG) Information System (IS) that is 
+provided for USG-authorized use only. By using this IS (which includes any 
+device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for 
+purposes including, but not limited to, penetration testing, COMSEC monitoring, 
+network operations and defense, personnel misconduct (PM), law enforcement 
+(LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject 
+to routine monitoring, interception, and search, and may be disclosed or used 
+for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) 
+to protect USG interests -- not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE 
+or CI investigative searching or monitoring of the content of privileged 
+communications, or work product, related to personal representation or services 
+by attorneys, psychotherapists, or clergy, and their assistants. Such 
+communications and work product are private and confidential. See User 
+Agreement for details.
+
+
+INF [20180621-17:26:46.323] thr=1   paramiko.transport: Authentication (publickey) successful!
+DEB [20180621-17:26:46.338] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20180621-17:26:46.411] thr=1   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20180621-17:26:46.412] thr=1   paramiko.transport: Secsh channel 0 opened.
+DEB [20180621-17:26:46.556] thr=1   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20180621-17:26:46.618] thr=1   paramiko.transport: EOF in transport thread
+DEB [20180621-17:27:34.911] thr=1   paramiko.transport: starting thread (client mode): 0x9fc8410L
+DEB [20180621-17:27:34.913] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.1
+DEB [20180621-17:27:34.997] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_6.6.1
+INF [20180621-17:27:34.997] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_6.6.1)
+DEB [20180621-17:27:35.068] thr=1   paramiko.transport: kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20180621-17:27:35.068] thr=1   paramiko.transport: Kex agreed: ecdh-sha2-nistp256
+DEB [20180621-17:27:35.068] thr=1   paramiko.transport: HostKey agreed: ssh-ed25519
+DEB [20180621-17:27:35.068] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20180621-17:27:35.068] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20180621-17:27:35.068] thr=1   paramiko.transport: Compression agreed: none
+DEB [20180621-17:27:35.820] thr=1   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20180621-17:27:35.821] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20180621-17:27:35.843] thr=2   paramiko.transport: Adding ssh-ed25519 host key for front0: fe003d54628e41aec3c628507c7493f9
+DEB [20180621-17:27:35.846] thr=2   paramiko.transport: Trying discovered key b38aa8bcdebd930911c3f721ff3e542f in /Users/evanliu/.ssh/id_rsa
+DEB [20180621-17:27:35.954] thr=1   paramiko.transport: userauth is OK
+INF [20180621-17:27:36.048] thr=1   paramiko.transport: Auth banner: You are accessing a U.S. Government (USG) Information System (IS) that is 
+provided for USG-authorized use only. By using this IS (which includes any 
+device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for 
+purposes including, but not limited to, penetration testing, COMSEC monitoring, 
+network operations and defense, personnel misconduct (PM), law enforcement 
+(LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject 
+to routine monitoring, interception, and search, and may be disclosed or used 
+for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) 
+to protect USG interests -- not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE 
+or CI investigative searching or monitoring of the content of privileged 
+communications, or work product, related to personal representation or services 
+by attorneys, psychotherapists, or clergy, and their assistants. Such 
+communications and work product are private and confidential. See User 
+Agreement for details.
+
+
+INF [20180621-17:27:36.049] thr=1   paramiko.transport: Authentication (publickey) successful!
+DEB [20180621-17:27:36.052] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20180621-17:27:36.096] thr=1   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20180621-17:27:36.096] thr=1   paramiko.transport: Secsh channel 0 opened.
+DEB [20180621-17:27:36.196] thr=1   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20180621-17:27:36.239] thr=1   paramiko.transport: [chan 0] EOF received (0)
+DEB [20180621-17:27:52.065] thr=1   paramiko.transport: starting thread (client mode): 0xa6e9410L
+DEB [20180621-17:27:52.066] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.1
+DEB [20180621-17:27:52.157] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_6.6.1
+INF [20180621-17:27:52.158] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_6.6.1)
+DEB [20180621-17:27:52.218] thr=1   paramiko.transport: kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20180621-17:27:52.218] thr=1   paramiko.transport: Kex agreed: ecdh-sha2-nistp256
+DEB [20180621-17:27:52.218] thr=1   paramiko.transport: HostKey agreed: ssh-ed25519
+DEB [20180621-17:27:52.218] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20180621-17:27:52.218] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20180621-17:27:52.218] thr=1   paramiko.transport: Compression agreed: none
+DEB [20180621-17:27:52.346] thr=1   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20180621-17:27:52.347] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20180621-17:27:52.376] thr=2   paramiko.transport: Adding ssh-ed25519 host key for front0: fe003d54628e41aec3c628507c7493f9
+DEB [20180621-17:27:52.379] thr=2   paramiko.transport: Trying discovered key b38aa8bcdebd930911c3f721ff3e542f in /Users/evanliu/.ssh/id_rsa
+DEB [20180621-17:27:52.515] thr=1   paramiko.transport: userauth is OK
+INF [20180621-17:27:52.624] thr=1   paramiko.transport: Auth banner: You are accessing a U.S. Government (USG) Information System (IS) that is 
+provided for USG-authorized use only. By using this IS (which includes any 
+device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for 
+purposes including, but not limited to, penetration testing, COMSEC monitoring, 
+network operations and defense, personnel misconduct (PM), law enforcement 
+(LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject 
+to routine monitoring, interception, and search, and may be disclosed or used 
+for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) 
+to protect USG interests -- not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE 
+or CI investigative searching or monitoring of the content of privileged 
+communications, or work product, related to personal representation or services 
+by attorneys, psychotherapists, or clergy, and their assistants. Such 
+communications and work product are private and confidential. See User 
+Agreement for details.
+
+
+INF [20180621-17:27:52.624] thr=1   paramiko.transport: Authentication (publickey) successful!
+DEB [20180621-17:27:52.654] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20180621-17:27:52.748] thr=1   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20180621-17:27:52.748] thr=1   paramiko.transport: Secsh channel 0 opened.
+DEB [20180621-17:27:53.060] thr=1   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20180621-17:27:53.100] thr=1   paramiko.transport: [chan 0] EOF received (0)
+DEB [20180621-17:28:26.100] thr=1   paramiko.transport: starting thread (client mode): 0x44e9410L
+DEB [20180621-17:28:26.101] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.1
+DEB [20180621-17:28:26.236] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_6.6.1
+INF [20180621-17:28:26.236] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_6.6.1)
+DEB [20180621-17:28:26.320] thr=1   paramiko.transport: kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20180621-17:28:26.321] thr=1   paramiko.transport: Kex agreed: ecdh-sha2-nistp256
+DEB [20180621-17:28:26.321] thr=1   paramiko.transport: HostKey agreed: ssh-ed25519
+DEB [20180621-17:28:26.321] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20180621-17:28:26.321] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20180621-17:28:26.321] thr=1   paramiko.transport: Compression agreed: none
+DEB [20180621-17:28:26.446] thr=1   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20180621-17:28:26.447] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20180621-17:28:26.480] thr=2   paramiko.transport: Adding ssh-ed25519 host key for front0: fe003d54628e41aec3c628507c7493f9
+DEB [20180621-17:28:26.483] thr=2   paramiko.transport: Trying discovered key b38aa8bcdebd930911c3f721ff3e542f in /Users/evanliu/.ssh/id_rsa
+DEB [20180621-17:28:26.581] thr=1   paramiko.transport: userauth is OK
+INF [20180621-17:28:26.665] thr=1   paramiko.transport: Auth banner: You are accessing a U.S. Government (USG) Information System (IS) that is 
+provided for USG-authorized use only. By using this IS (which includes any 
+device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for 
+purposes including, but not limited to, penetration testing, COMSEC monitoring, 
+network operations and defense, personnel misconduct (PM), law enforcement 
+(LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject 
+to routine monitoring, interception, and search, and may be disclosed or used 
+for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) 
+to protect USG interests -- not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE 
+or CI investigative searching or monitoring of the content of privileged 
+communications, or work product, related to personal representation or services 
+by attorneys, psychotherapists, or clergy, and their assistants. Such 
+communications and work product are private and confidential. See User 
+Agreement for details.
+
+
+INF [20180621-17:28:26.665] thr=1   paramiko.transport: Authentication (publickey) successful!
+DEB [20180621-17:28:26.692] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20180621-17:28:26.740] thr=1   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20180621-17:28:26.740] thr=1   paramiko.transport: Secsh channel 0 opened.
+DEB [20180621-17:28:26.811] thr=1   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20180621-17:28:26.848] thr=1   paramiko.transport: [chan 0] EOF received (0)
+DEB [20180621-17:29:03.494] thr=1   paramiko.transport: starting thread (client mode): 0xe176410L
+DEB [20180621-17:29:03.494] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.1
+DEB [20180621-17:29:03.584] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_6.6.1
+INF [20180621-17:29:03.584] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_6.6.1)
+DEB [20180621-17:29:03.688] thr=1   paramiko.transport: kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20180621-17:29:03.688] thr=1   paramiko.transport: Kex agreed: ecdh-sha2-nistp256
+DEB [20180621-17:29:03.688] thr=1   paramiko.transport: HostKey agreed: ssh-ed25519
+DEB [20180621-17:29:03.688] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20180621-17:29:03.688] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20180621-17:29:03.688] thr=1   paramiko.transport: Compression agreed: none
+DEB [20180621-17:29:03.855] thr=1   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20180621-17:29:03.856] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20180621-17:29:03.874] thr=2   paramiko.transport: Adding ssh-ed25519 host key for front0: fe003d54628e41aec3c628507c7493f9
+DEB [20180621-17:29:03.878] thr=2   paramiko.transport: Trying discovered key b38aa8bcdebd930911c3f721ff3e542f in /Users/evanliu/.ssh/id_rsa
+DEB [20180621-17:29:04.294] thr=1   paramiko.transport: userauth is OK
+INF [20180621-17:29:04.396] thr=1   paramiko.transport: Auth banner: You are accessing a U.S. Government (USG) Information System (IS) that is 
+provided for USG-authorized use only. By using this IS (which includes any 
+device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for 
+purposes including, but not limited to, penetration testing, COMSEC monitoring, 
+network operations and defense, personnel misconduct (PM), law enforcement 
+(LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject 
+to routine monitoring, interception, and search, and may be disclosed or used 
+for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) 
+to protect USG interests -- not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE 
+or CI investigative searching or monitoring of the content of privileged 
+communications, or work product, related to personal representation or services 
+by attorneys, psychotherapists, or clergy, and their assistants. Such 
+communications and work product are private and confidential. See User 
+Agreement for details.
+
+
+INF [20180621-17:29:04.396] thr=1   paramiko.transport: Authentication (publickey) successful!
+DEB [20180621-17:29:04.397] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20180621-17:29:04.449] thr=1   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20180621-17:29:04.451] thr=1   paramiko.transport: Secsh channel 0 opened.
+DEB [20180621-17:29:04.505] thr=1   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20180621-17:29:04.550] thr=1   paramiko.transport: [chan 0] EOF received (0)
+
+
+DEB [20180621-17:46:11.585] thr=1   paramiko.transport: starting thread (client mode): 0x3920590L
+DEB [20180621-17:46:11.586] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.1
+DEB [20180621-17:46:11.668] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_6.6.1
+INF [20180621-17:46:11.668] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_6.6.1)
+DEB [20180621-17:46:11.729] thr=1   paramiko.transport: kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20180621-17:46:11.729] thr=1   paramiko.transport: Kex agreed: ecdh-sha2-nistp256
+DEB [20180621-17:46:11.729] thr=1   paramiko.transport: HostKey agreed: ssh-ed25519
+DEB [20180621-17:46:11.729] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20180621-17:46:11.729] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20180621-17:46:11.729] thr=1   paramiko.transport: Compression agreed: none
+DEB [20180621-17:46:11.845] thr=1   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20180621-17:46:11.846] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20180621-17:46:11.862] thr=2   paramiko.transport: Adding ssh-ed25519 host key for api0: 7196d30e72f4f1d95ebf11667c2a5aed
+DEB [20180621-17:46:11.864] thr=2   paramiko.transport: Trying discovered key b38aa8bcdebd930911c3f721ff3e542f in /Users/evanliu/.ssh/id_rsa
+DEB [20180621-17:46:12.345] thr=1   paramiko.transport: userauth is OK
+INF [20180621-17:46:12.462] thr=1   paramiko.transport: Auth banner: You are accessing a U.S. Government (USG) Information System (IS) that is 
+provided for USG-authorized use only. By using this IS (which includes any 
+device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for 
+purposes including, but not limited to, penetration testing, COMSEC monitoring, 
+network operations and defense, personnel misconduct (PM), law enforcement 
+(LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject 
+to routine monitoring, interception, and search, and may be disclosed or used 
+for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) 
+to protect USG interests -- not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE 
+or CI investigative searching or monitoring of the content of privileged 
+communications, or work product, related to personal representation or services 
+by attorneys, psychotherapists, or clergy, and their assistants. Such 
+communications and work product are private and confidential. See User 
+Agreement for details.
+
+
+INF [20180621-17:46:12.463] thr=1   paramiko.transport: Authentication (publickey) failed.
+DEB [20180621-17:46:12.569] thr=1   paramiko.transport: EOF in transport thread
