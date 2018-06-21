@@ -25,13 +25,22 @@ def GetApiLogsData():
     apihosts = GetApiHosts()
     logspath = GetApiLogsPath()
     # print logspath
-    for log in logspath:
-        command = 'tail -2 %s' % log
-        logsdata = [
-            RemoteCommand(host=host, port=Config.api_port, username=Config.api_user,passwd=Config.api_passwd, command=command) \
-                     for host in apihosts
-        ]
-        print logsdata
+
+    # datas = []
+    for host in apihosts:
+        for log in logspath:
+            command = 'tail -2 %s' % log
+            logsdata = RemoteCommand(host=host, port=Config.api_port, username=Config.api_user,
+                                     passwd=Config.api_passwd, command=command)
+            t = {
+                log: len(logsdata)
+            }
+        print t
+
+        # datas.append(h)
+
+    # return datas
+
 
 
 
