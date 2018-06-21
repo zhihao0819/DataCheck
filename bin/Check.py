@@ -10,7 +10,7 @@ sys.path.append('../')
 from src.VdsApi import GetApiLogsPath
 
 def main():
-    GetApiLogsPath()
+    print GetApiLogsPath()
 
 
 if __name__ == '__main__':
