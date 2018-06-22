@@ -5,47 +5,45 @@
 # @Email    : liuzhihao@growingio.com
 # @File     : VdsApi.py
 
-import sys
+
 from .Connect import RemoteOper
 from .Common import ShowOutPut
-sys.path.append('../')
-from conf import Config
-
 
 class ApiServer(object):
-    def __init__(self):
-        self.apihosts = Config.api_servers
-        self.remote = RemoteOper(host=self.apihosts[0], port=Config.port, username=Config.user,
-                            passwd=Config.passwd, logfile=Config.log_file)
+    def __init__(self, host, port, user, passwd, logfile):
+        self.remote = RemoteOper(host=host, port=port, username=user,
+                            passwd=passwd, logfile=logfile)
+        self.host = host
+        self.port = port
+        self.user = user
+        self.passwd = passwd
 
-    def GetApiLogsPath(self):
-        command = 'ls %s/*.log' % Config.data_dir
+    def GetApiLogsPath(self, datadir):
+        command = 'ls %s/*.log' % datadir
         logspath = self.remote.Command(command)
         return logspath.strip('\n').split('\n')
 
-    def GetApiLogsData(self):
-        logspath = self.GetApiLogsPath()
-        datas, h, l = [], {} , {}
-        for host in self.apihosts:
-            for log in logspath:
-                command = 'tail -2 %s' % log
-                logsdata = self.remote.Command(command)
-                l[log] = logsdata
-            h[host] = l
-        datas.append(h)
-        return datas
+    def GetApiLogsData(self, datadir):
+        logspath = self.GetApiLogsPath(datadir)
+        logs = {}
+        for log in logspath:
+            command = 'tail -2 %s' % log
+            logsdata = self.remote.Command(command)
+            logs[log] = logsdata
+        return {self.host: logs}
 
-    def Show(self):
-        resdatas = self.GetApiLogsData()
+
+    def Show(self, datadir):
+        resdatas = self.GetApiLogsData(datadir)
         mess = ShowOutPut()
-        print mess.Blue('################ Check vds-api Servers Data  #######################')
-        for datas in resdatas:
-            for host in datas.keys():
-                print mess.Green('## %s ##' % host)
-                for f in datas[host].keys():
-                    print mess.Purple('# %s' % f)
-                    print mess.Normal(datas[host][f])
-                print mess.Red("========================================\n")
+        # print mess.Blue('################ Check vds-api Servers Data  #######################')
+
+        print mess.Green('## %s ##' % resdatas[self.host])
+        for file in resdatas[self.host].keys():
+            print mess.Purple('# %s' % file)
+            print mess.Normal(resdatas[self.host][file])
+
+        print mess.Red("========================================\n")
 
 
 

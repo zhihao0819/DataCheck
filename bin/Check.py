@@ -7,11 +7,14 @@
 
 import sys
 sys.path.append('../')
-from src.VdsApi import ApiServer
+from conf import Config
+from src.Common import ManyHandle
+
+
 
 def CheckApi():
-    api = ApiServer()
-    api.Show()
+    api = ManyHandle(user=Config.user, port=Config.port, passwd=Config.passwd, logfile=Config.log_file)
+    api.ApiHandle(hosts=Config.api_servers, datadir=Config.data_dir)
 
 def main():
     CheckApi()

@@ -5,6 +5,7 @@
 # @Email    : liuzhihao@growingio.com
 # @File     : Common.py
 
+from .VdsApi import ApiServer
 
 class ShowOutPut(object):
 
@@ -22,6 +23,29 @@ class ShowOutPut(object):
 
     def Red(self, message):
         return "\033[1;31m %s \033[0m" % message
+
+
+class ManyHandle(object):
+
+    def __init__(self, user, port, passwd, logfile):
+        self.user = user
+        self.port = port
+        self.passwd = passwd
+        self.logfile = logfile
+
+
+    def ApiHandle(self, hosts, datadir):
+        mess = ShowOutPut()
+        mess.Blue('################ Check vds-api Servers Data  #######################')
+        for host in hosts:
+            api = ApiServer(host=host, port=self.port, user=self.user, passwd=self.passwd, logfile=self.logfile)
+            api.Show(datadir)
+
+
+
+
+
+
 
 
 

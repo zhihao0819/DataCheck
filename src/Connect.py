@@ -21,7 +21,8 @@ class RemoteOper(object):
         conn = paramiko.SSHClient()
         conn.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
-        conn.connect(hostname=self.host, port=self.port, username=self.username, password=self.passwd)
+        conn.connect(hostname=self.host, port=self.port,
+                     username=self.username, password=self.passwd)
         stdin, stdout, stderr = conn.exec_command(command)
         stdin.write('Y')
         response = stdout.read()
