@@ -42,9 +42,9 @@ def Show():
     for datas in resdatas:
         for host in datas.keys():
             print mess.Green('## %s ##' % host)
-            for f in host.keys():
+            for f in datas[host].keys():
                 print mess.Purple('# %s' % f)
-                print mess.Normal(host[f])
+                print mess.Normal(datas[host][f])
             print mess.Red("################################\n")
 
 
