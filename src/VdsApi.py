@@ -39,12 +39,13 @@ def GetApiLogsData():
 def Show():
     resdatas = GetApiLogsData()
     mess = ShowOutPut()
-    for host in resdatas:
-        print mess.Green('## %s ##' % host)
-        for f in host.keys():
-            print mess.Purple('# %s' % f)
-            print mess.Normal(host[f])
-        print mess.Red("################################\n")
+    for datas in resdatas:
+        for host in datas.keys():
+            print mess.Green('## %s ##' % host)
+            for f in host.keys():
+                print mess.Purple('# %s' % f)
+                print mess.Normal(host[f])
+            print mess.Red("################################\n")
 
 
 
