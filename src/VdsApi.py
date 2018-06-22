@@ -38,7 +38,7 @@ class ApiServer(object):
         mess = ShowOutPut()
         # print mess.Blue('################ Check vds-api Servers Data  #######################')
 
-        print mess.Green('## %s ##' % resdatas[self.host])
+        print mess.Green('## %s ##' % self.host)
         for file in resdatas[self.host].keys():
             print mess.Purple('# %s' % file)
             print mess.Normal(resdatas[self.host][file])
