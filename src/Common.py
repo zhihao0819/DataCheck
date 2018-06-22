@@ -6,24 +6,7 @@
 # @File     : Common.py
 
 from .VdsApi import ApiServer
-
-class ShowOutPut(object):
-
-    def Normal(self, message):
-        return message
-
-    def Blue(self, message):
-        return "\033[1;34m %s \033[0m" % message
-
-    def Green(self, message):
-        return "\033[1;32m %s \033[0m" % message
-
-    def Purple(self, message):
-        return "\033[1;35m %s \033[0m" % message
-
-    def Red(self, message):
-        return "\033[1;31m %s \033[0m" % message
-
+from .Color import ShowOutPut
 
 class ManyHandle(object):
 
@@ -32,7 +15,6 @@ class ManyHandle(object):
         self.port = port
         self.passwd = passwd
         self.logfile = logfile
-
 
     def ApiHandle(self, hosts, datadir):
         mess = ShowOutPut()

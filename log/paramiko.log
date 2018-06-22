@@ -420,3 +420,46 @@ Agreement for details.
 
 INF [20180621-17:46:12.463] thr=1   paramiko.transport: Authentication (publickey) failed.
 DEB [20180621-17:46:12.569] thr=1   paramiko.transport: EOF in transport thread
+DEB [20180622-18:18:24.256] thr=1   paramiko.transport: starting thread (client mode): 0xab908d0L
+DEB [20180622-18:18:24.256] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.4.1
+DEB [20180622-18:18:24.305] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_6.6.1
+INF [20180622-18:18:24.305] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_6.6.1)
+DEB [20180622-18:18:24.377] thr=1   paramiko.transport: kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-ripemd160-etm@openssh.com', u'hmac-sha1-96-etm@openssh.com', u'hmac-md5-96-etm@openssh.com', u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20180622-18:18:24.378] thr=1   paramiko.transport: Kex agreed: ecdh-sha2-nistp256
+DEB [20180622-18:18:24.378] thr=1   paramiko.transport: HostKey agreed: ssh-ed25519
+DEB [20180622-18:18:24.378] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20180622-18:18:24.378] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20180622-18:18:24.379] thr=1   paramiko.transport: Compression agreed: none
+DEB [20180622-18:18:24.512] thr=1   paramiko.transport: kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+DEB [20180622-18:18:24.513] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20180622-18:18:24.534] thr=2   paramiko.transport: Adding ssh-ed25519 host key for api0: 7196d30e72f4f1d95ebf11667c2a5aed
+DEB [20180622-18:18:24.537] thr=2   paramiko.transport: Trying discovered key b38aa8bcdebd930911c3f721ff3e542f in /Users/evanliu/.ssh/id_rsa
+DEB [20180622-18:18:24.616] thr=1   paramiko.transport: userauth is OK
+INF [20180622-18:18:24.708] thr=1   paramiko.transport: Auth banner: You are accessing a U.S. Government (USG) Information System (IS) that is 
+provided for USG-authorized use only. By using this IS (which includes any 
+device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for 
+purposes including, but not limited to, penetration testing, COMSEC monitoring, 
+network operations and defense, personnel misconduct (PM), law enforcement 
+(LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject 
+to routine monitoring, interception, and search, and may be disclosed or used 
+for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) 
+to protect USG interests -- not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE 
+or CI investigative searching or monitoring of the content of privileged 
+communications, or work product, related to personal representation or services 
+by attorneys, psychotherapists, or clergy, and their assistants. Such 
+communications and work product are private and confidential. See User 
+Agreement for details.
+
+
+INF [20180622-18:18:24.708] thr=1   paramiko.transport: Authentication (publickey) failed.
+DEB [20180622-18:18:24.813] thr=1   paramiko.transport: EOF in transport thread

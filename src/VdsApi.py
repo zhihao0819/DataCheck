@@ -7,7 +7,7 @@
 
 
 from .Connect import RemoteOper
-from .Common import ShowOutPut
+from .Color import ShowOutPut
 
 class ApiServer(object):
     def __init__(self, host, port, user, passwd, logfile):
