@@ -7,10 +7,11 @@
 
 import sys
 sys.path.append('../')
-from src.VdsApi import Show
+from src.VdsApi import ApiServer
 
 def main():
-    Show()
+    api = ApiServer()
+    api.Show()
 
 
 if __name__ == '__main__':
