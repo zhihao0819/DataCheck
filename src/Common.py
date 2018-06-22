@@ -18,7 +18,7 @@ class ManyHandle(object):
 
     def ApiHandle(self, hosts, datadir):
         mess = ShowOutPut()
-        mess.Blue('################ Check vds-api Servers Data  #######################')
+        print mess.Blue('################ Check vds-api Servers Data  #######################')
         for host in hosts:
             api = ApiServer(host=host, port=self.port, user=self.user, passwd=self.passwd, logfile=self.logfile)
             api.Show(datadir)
