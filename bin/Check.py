@@ -9,9 +9,12 @@ import sys
 sys.path.append('../')
 from src.VdsApi import ApiServer
 
-def main():
+def CheckApi():
     api = ApiServer()
     api.Show()
+
+def main():
+    CheckApi()
 
 
 if __name__ == '__main__':

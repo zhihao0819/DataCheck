@@ -6,9 +6,10 @@
 # @File     : config.py
 
 #common config
-ansible_dir = '/opt/growing-ansible/inventories/01-690cfg'
 log_file = '../log/paramiko.log'
-jump_server = 'front0'
+user = 'apps'
+port = 22
+passwd = None
 
 
 #vds-api config

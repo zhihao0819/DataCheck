@@ -11,6 +11,9 @@ class ShowOutPut(object):
     def Normal(self, message):
         return message
 
+    def Blue(self, message):
+        return "\033[1;34m %s \033[0m" % message
+
     def Green(self, message):
         return "\033[1;32m %s \033[0m" % message
 
