@@ -6,7 +6,7 @@
 # @File     : VdsApi.py
 
 import sys
-from .Connect import RemoteCommand
+from .Connect import RemoteOper
 from .Common import ShowOutPut
 sys.path.append('../')
 from conf import Config
@@ -15,11 +15,12 @@ from conf import Config
 class ApiServer(object):
     def __init__(self):
         self.apihosts = Config.api_servers
+        self.remote = RemoteOper(host=self.apihosts[0], port=Config.port, username=Config.user,
+                            passwd=Config.passwd, logfile=Config.log_file)
 
     def GetApiLogsPath(self):
         command = 'ls %s/*.log' % Config.data_dir
-        logspath = RemoteCommand(host=self.apihosts[0], port=Config.port, username=Config.user,
-                                 passwd=Config.passwd, command=command)
+        logspath = self.remote.Command(command)
         return logspath.strip('\n').split('\n')
 
     def GetApiLogsData(self):
@@ -28,8 +29,7 @@ class ApiServer(object):
         for host in self.apihosts:
             for log in logspath:
                 command = 'tail -2 %s' % log
-                logsdata = RemoteCommand(host=host, port=Config.port, username=Config.user,
-                                         passwd=Config.passwd, command=command)
+                logsdata = self.remote.Command(command)
                 l[log] = logsdata
             h[host] = l
         datas.append(h)
