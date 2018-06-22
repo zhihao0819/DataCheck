@@ -7,6 +7,7 @@
 
 import sys
 from .Connect import RemoteCommand
+from .Common import ShowOutPut
 sys.path.append('../')
 from conf import Config
 
@@ -24,29 +25,26 @@ def GetApiLogsPath():
 def GetApiLogsData():
     apihosts = GetApiHosts()
     logspath = GetApiLogsPath()
-    # print logspath
-
-    # datas = []
+    datas, h, l = [], {} , {}
     for host in apihosts:
         for log in logspath:
             command = 'tail -2 %s' % log
             logsdata = RemoteCommand(host=host, port=Config.api_port, username=Config.api_user,
                                      passwd=Config.api_passwd, command=command)
-            t = {
-                log: len(logsdata)
-            }
-        print t
+            l[log] = logsdata
+        h[host] = l
+    datas.append(h)
+    return datas
 
-        # datas.append(h)
-
-    # return datas
-
-
-
-
-
-
-
+def Show():
+    resdatas = GetApiLogsData()
+    mess = ShowOutPut()
+    for host in resdatas:
+        print mess.Green('## %s ##' % host)
+        for f in host.keys():
+            print mess.Purple('# %s' % f)
+            print mess.Normal(host[f])
+        print mess.Red("################################\n")
 
 
 
