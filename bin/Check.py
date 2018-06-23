@@ -14,8 +14,15 @@ def CheckApi():
     api = ManyHandle(user=Config.user, port=Config.port, passwd=Config.passwd, logfile=Config.log_file)
     api.ApiHandle(hosts=Config.api_servers, datadir=Config.data_dir)
 
+def CheckKafka():
+    kafka = ManyHandle(user=Config.user, port=Config.port, passwd=Config.passwd, logfile=Config.log_file)
+    kafka.KafkaHandle(hosts=Config.kafka_servers, zkhost=Config.zk_servers, zkport=Config.zk_port, topic=Config.kafka_topic,
+                      kabin=Config.kafka_bin, kaconsumer=Config.kafka_cmd)
+
+
+
 def main():
-    CheckApi()
+    CheckKafka()
 
 
 if __name__ == '__main__':

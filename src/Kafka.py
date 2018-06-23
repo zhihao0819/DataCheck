@@ -6,7 +6,7 @@
 # @File     : Kafka.py
 
 
-# from .Common import ShowOutPut
+from .Common import ShowOutPut
 from .Connect import RemoteOper
 
 class KafkaServer(object):
@@ -17,6 +17,23 @@ class KafkaServer(object):
         self.port = port
         self.user = user
         self.passwd = passwd
+
+    def GetKafkaData(self, zkhost, zkport, topic, kabin, kaconsumer):
+        command = 'cd %s && ./%s --zookeeper %s:%s --topic %s --max-messages 2' % (kabin, kaconsumer, zkhost, zkport, topic)
+        datas = self.remote.Command(command)
+        return datas
+
+    def Show(self, zkhost, zkport, topic, kabin, kaconsumer):
+        datas = self.GetKafkaData(zkhost, zkport, topic, kabin, kaconsumer)
+        mess = ShowOutPut()
+        print mess.Green("## %s ##" % self.host)
+        print mess.Purple('# %s' % topic)
+        print mess.Normal(datas)
+        print mess.Red("========================================\n")
+
+
+
+
 
 
 

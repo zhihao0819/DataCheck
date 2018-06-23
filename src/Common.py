@@ -6,6 +6,7 @@
 # @File     : Common.py
 
 from .VdsApi import ApiServer
+from .Kafka import KafkaServer
 from .Color import ShowOutPut
 
 class ManyHandle(object):
@@ -23,6 +24,13 @@ class ManyHandle(object):
             api = ApiServer(host=host, port=self.port, user=self.user, passwd=self.passwd, logfile=self.logfile)
             api.Show(datadir)
 
+
+    def KafkaHandle(self, hosts, zkhost, zkport, topic, kabin, kaconsumer):
+        mess = ShowOutPut()
+        print mess.Blue('################ Check Kakfa-services Servers Data  #######################')
+        for host in hosts:
+            kafka = KafkaServer(host=host, port=self.port, user=self.user, passwd=self.passwd, logfile=self.logfile)
+            kafka.Show(zkhost=zkhost, zkport=zkport, topic=topic, kabin=kabin, kaconsumer=kaconsumer)
 
 
 

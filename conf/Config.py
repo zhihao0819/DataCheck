@@ -10,8 +10,8 @@ log_file = '../log/paramiko.log'
 user = 'apps'
 port = 22
 passwd = None
-zkservers = ('kafka0', 'kafka1', 'kafka2')
-zkport = 2181
+zk_servers = ('kafka0', 'kafka1', 'kafka2')
+zk_port = 2181
 
 # vds-api config
 api_servers = ('api0', 'api1')
