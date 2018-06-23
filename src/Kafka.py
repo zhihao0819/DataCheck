@@ -6,7 +6,7 @@
 # @File     : Kafka.py
 
 
-from .Common import ShowOutPut
+from .Color import ShowOutPut
 from .Connect import RemoteOper
 
 class KafkaServer(object):
