@@ -21,10 +21,9 @@ def CheckKafka():
                       kabin=Config.kafka_bin, kaconsumer=Config.kafka_cmd)
 
 
-
 def main():
+    CheckApi()
     CheckKafka()
-
 
 if __name__ == '__main__':
     main()
