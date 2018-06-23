@@ -19,8 +19,8 @@ class KafkaServer(object):
         self.passwd = passwd
 
     def GetKafkaData(self, zkhost, zkport, topic, kabin, kaconsumer):
-        command = 'cd %s && ./%s --zookeeper %s:%s --topic %s --max-messages 2' % (kabin, kaconsumer, zkhost, zkport, topic)
-        print command
+        command = 'cd %s && ./%s --zookeeper %s:%s/kafka --topic %s --max-messages 2' % (kabin, kaconsumer, zkhost, zkport, topic)
+        # print command
         datas = self.remote.Command(command)
         return datas
 
