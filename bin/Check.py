@@ -16,7 +16,8 @@ def CheckApi():
 
 def CheckKafka():
     kafka = ManyHandle(user=Config.user, port=Config.port, passwd=Config.passwd, logfile=Config.log_file)
-    kafka.KafkaHandle(hosts=Config.kafka_servers, zkhost=Config.zk_servers, zkport=Config.zk_port, topic=Config.kafka_topic,
+    # just only one zookeeper host, because config file zk is tuple.
+    kafka.KafkaHandle(hosts=Config.kafka_servers, zkhost=Config.zk_servers[0], zkport=Config.zk_port, topic=Config.kafka_topic,
                       kabin=Config.kafka_bin, kaconsumer=Config.kafka_cmd)
 
 
