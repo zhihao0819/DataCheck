@@ -27,8 +27,8 @@ def CheckOnline():
 
 
 def main():
-    # CheckApi()
-    # CheckKafka()
+    CheckApi()
+    CheckKafka()
     CheckOnline()
 
 if __name__ == '__main__':
