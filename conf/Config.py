@@ -27,7 +27,7 @@ kafka_cmd = 'kafka-console-consumer.sh'
 online_servers = ('online0', 'online1')
 tables = ('visit', 'action', 'page')
 spark_bin = '/apps/svr/spark/bin'
-spark_cmd = './spark-sql'
+spark_cmd = 'spark-sql'
 temp_sql = '/tmp/.sql'
 
 
