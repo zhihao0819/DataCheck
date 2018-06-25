@@ -14,9 +14,9 @@ class ApiServer(object):
         self.remote = RemoteOper(host=host, port=port, username=user,
                             passwd=passwd, logfile=logfile)
         self.host = host
-        self.port = port
-        self.user = user
-        self.passwd = passwd
+        # self.port = port
+        # self.user = user
+        # self.passwd = passwd
 
     def GetApiLogsPath(self, datadir):
         command = 'ls %s/*.log' % datadir

@@ -7,6 +7,7 @@
 
 from .VdsApi import ApiServer
 from .Kafka import KafkaServer
+from .Online import OnlineServer
 from .Color import ShowOutPut
 
 class ManyHandle(object):
@@ -32,6 +33,13 @@ class ManyHandle(object):
             kafka = KafkaServer(host=host, port=self.port, user=self.user, passwd=self.passwd, logfile=self.logfile)
             kafka.Show(zkhost=zkhost, zkport=zkport, topic=topic, kabin=kabin, kaconsumer=kaconsumer)
 
+
+    def OnlineHandle(self, hosts, sparkbin, sparkcmd, tables, tempsql):
+        mess = ShowOutPut()
+        print mess.Blue('################ Check Online-Hive Tables Data  #######################')
+        for host in hosts:
+            online = OnlineServer(host=host, port=self.port, user=self.user, passwd=self.passwd, logfile=self.logfile)
+            online.Show(sparkbin=sparkbin, sparkcmd=sparkcmd, tables=tables, tempsql=tempsql)
 
 
 

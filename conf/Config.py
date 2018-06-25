@@ -23,6 +23,15 @@ kafka_bin = '/apps/svr/kafka/bin'
 kafka_topic = 'vds-api-web-pv'
 kafka_cmd = 'kafka-console-consumer.sh'
 
+# online config
+online_servers = ('online0', 'online1')
+tables = ('visit', 'action', 'page')
+spark_bin = '/apps/svr/spark/bin'
+spark_cmd = './spark-sql'
+temp_sql = '/tmp/.sql'
+
+
+
 
 
 
