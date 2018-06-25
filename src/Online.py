@@ -19,11 +19,12 @@ class OnlineServer(object):
     def CreateSqlFile(self, tempsql, table):
         querytm = time.strftime('%Y%m%d%H%')
         self.remote.Command('''
-            echo "select * from gio.%s WHERE time like %s order by stm desc limit 10" > %s''' % (table, querytm, tempsql))
+            echo "select * from gio.%s WHERE time like %s order by stm desc limit 10;" > %s''' % (table, querytm, tempsql))
 
     def GetDHiveData(self, sparkbin, sparkcmd, table, tempsql):
         self.CreateSqlFile(tempsql, table)
         command = 'cd %s && ./%s --master local[4] -f %s' % (sparkbin, sparkcmd, tempsql)
+        print command
         datas = self.remote.Command(command)
         return datas
 
